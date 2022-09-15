@@ -13,7 +13,9 @@ class Main
     System.out.println("Can Fly: " + s1.getCanFly());
     System.out.println("Cape Letter: " + s1.getCapeLetter());
     System.out.println("Health: " + s1.getHealth());
-   //put space here
+    System.out.println("");
+    System.out.println("");
+    System.out.println("");
     System.out.println("The Villian... ");
     Villain v1 = new Villain("Trickster", "Manipulation", "Jokers", 10.5, 45);
     //decrease health method:  v1.decreaseHealth(50);
