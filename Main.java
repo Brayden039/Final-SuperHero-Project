@@ -2,7 +2,7 @@ class Main
 {
   public static void main(String[] args)
   {
-    SuperHero s1 = new SuperHero("SuperMan", "Lazers", "Joker", 99.9, "S", true, 100);
+    SuperHero s1 = new SuperHero("SuperMan", "Lazers", "Joker", 99.9, 'S', true, 100);
     //decrease health method:  v1.decreaseHealth(50);
     //increase health method:  v1.increaseHealth(50);
     System.out.println("The SuperHero: ");
@@ -16,7 +16,7 @@ class Main
     System.out.println("");
     System.out.println("");
     System.out.println("");
-    System.out.println("The Villian... ");
+    System.out.println("The Villian: ");
     Villain v1 = new Villain("Trickster", "Manipulation", "Jokers", 10.5, 45);
     //decrease health method:  v1.decreaseHealth(50);
     //increase health method:  v1.increaseHealth(50);

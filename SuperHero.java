@@ -4,7 +4,7 @@ public class SuperHero
   private String superpower;
   private String weakness;
   private double strength;
-  private String capeLetter;
+  private char capeLetter;
   private boolean canFly;
 
   private int health;
@@ -15,12 +15,12 @@ public class SuperHero
     superpower = " ";
     weakness = " ";
     strength = 0.0;
-    capeLetter = " ";
+    capeLetter = ' ';
     canFly = false;
     health = 0;
   }
 
-  public SuperHero(String n, String sp, String w, double s, String c, boolean cf, int h)
+  public SuperHero(String n, String sp, String w, double s, char c, boolean cf, int h)
   {
     name = n;
     superpower = sp;
@@ -63,11 +63,11 @@ public class SuperHero
   {
     strength = s;
   }
-  public String getCapeLetter()
+  public char getCapeLetter()
   {
     return capeLetter;
   }
-  public void setCapeLetter(String c)
+  public void setCapeLetter(char c)
   {
     capeLetter = c;
   }
@@ -91,21 +91,21 @@ public class SuperHero
   //threaten and escape methods
     public String escape()
     {
-      if (health<= 50)
+      if (canFly == true)
       {
-        return("You will never catch me!"); 
+        return("Up, up, and away"); 
       }
       else
       {
-        return("You will never defeat me! Come find me if you can!");
+        return("You will never outrun me!");
       }
     }
     
-    public String threaten()
+    public String giveWarning()
     {
       if (health <= 50)
       {
-        return("I may be weak but come at me!");
+        return("I may be weak but come fight me!");
       }
       else
       {
